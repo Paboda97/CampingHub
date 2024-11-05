@@ -1,0 +1,239 @@
+/* Basic Reset and Variables */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+:root {
+    --text-color: #fff;
+    --main-color: #ff9900;
+    --secondary-color: #001029;
+}
+
+/* General Styles */
+body {
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    transition: all 0.5s ease;
+}
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-color);
+}
+.logo span {
+    color: var(--main-color);
+}
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+.navbar a {
+    color: var(--text-color);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.navbar a:hover {
+    color: var(--main-color);
+}
+.contact-btn {
+    background: var(--main-color);
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+.contact-btn:hover {
+    background: #e68a00;
+}
+#menu-icon {
+    display: none;
+}
+
+/* Home Section */
+.home {
+    height: 50vh;
+    background: url('img/background.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 10%;
+}
+.home-text h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+.home-text p {
+    font-size: 1.2rem;
+    color: #ffffffb3;
+    margin-bottom: 30px;
+}
+
+/*form*/
+.contact-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1300px;
+    background: white;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.contact-info, .contact-form {
+
+    margin: 50px ;
+    padding: 50px;
+    align-items: center;
+    color: #333;
+    text-align: justify;
+}
+
+.contact-info h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact-form form input, .contact-form form textarea, .contact-form form button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.contact-form form button {
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+@media (min-width: 600px) {
+    .contact-section {
+        flex-direction: row;
+    }
+
+    .contact-info, .contact-form {
+        flex: 1;
+        margin: 0 10px;
+    }
+}
+
+/* Footer Styles */
+footer {
+    background: var(--secondary-color);
+    color: var(--text-color);
+    padding: 40px 10%;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.footer-logo img {
+    width: 80px;
+    border-radius: 50%;
+}
+
+.footer-logo p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+.footer-links ul,
+.footer-info ul {
+    list-style: none;
+    text-align: left;
+    padding: 0;
+}
+
+.footer-links h3,
+.footer-info h3,
+.footer-newsletter h3 {
+    color: var(--main-color);
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.footer-links li,
+.footer-info p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+    text-align: left;
+    color: var(--text-color);
+}
+
+.footer-links a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: var(--main-color);
+}
+
+.footer-newsletter form {
+    display: flex;
+    align-items: center;
+}
+
+.footer-newsletter input[type="email"] {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.footer-newsletter button {
+    padding: 8px 12px;
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.footer-newsletter button:hover {
+    background: #e68a00;
+}
+
+.footer-copyright {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #aaa;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camping Hub</title>
+    <link rel="icon" href="./img/logo.png" type="image/png">
+
+    <!-- Custom CSS link -->
+    <link rel="stylesheet" type="text/css" href="shop.css">
+
+    <!-- Boxicons link -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- Remixicons link -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Load icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="index.html" class="logo">Camping<span>Hub</span></a>
+
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="package.html">Package</a></li>
+            <li><a href="shop.html" class="active">Shop</a></li>
+            <li><a href="blog.html">Blogs</a></li>
+        </ul>
+
+        <a href="contact.html" class="contact-btn">Contact Us</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home">
+        <div class="home-text">
+            <h1>SHOP</h1>
+        </div>
+    </section>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h3>Categories</h3>
+            <ul class="categories">
+                <li><input type="checkbox"> Backpack (4)</li>
+                <li><input type="checkbox"> Camp (6)</li>
+                <li><input type="checkbox"> Clothes (4)</li>
+                <li><input type="checkbox"> Sleeping Bag (4)</li>
+                <li><input type="checkbox"> Sport Shoes (3)</li>
+                <li><input type="checkbox"> Thermal Bottle (5)</li>
+            </ul>
+
+            <h3>Price</h3>
+            <input type="range" min="0" max="300" value="150" class="price-range">
+            <p>Range: Rs.<span id="min-price">3000</span> - Rs.<span id="max-price">50000</span></p>
+
+            <h3>Color</h3>
+            <ul class="colors">
+                <li><input type="checkbox"> Black (3)</li>
+                <li><input type="checkbox"> Blue (2)</li>
+                <li><input type="checkbox"> Green (2)</li>
+                <li><input type="checkbox"> Pink (2)</li>
+                <li><input type="checkbox"> Red (1)</li>
+            </ul>
+
+            <h3>Size</h3>
+            <ul class="sizes">
+                <li><input type="checkbox"> L (2)</li>
+                <li><input type="checkbox"> M (2)</li>
+                <li><input type="checkbox"> S (2)</li>
+                <li><input type="checkbox"> XL (1)</li>
+            </ul>
+        </aside>
+
+        <main class="product-list">
+            <div class="sorting-bar">
+                <span>Showing 1-15 of 26 item(s)</span>
+                <select class="sort-dropdown">
+                    <option value="default">Default Sorting</option>
+                    <option value="price-low-high">Price: Low to High</option>
+                    <option value="price-high-low">Price: High to Low</option>
+                </select>
+            </div>
+
+            <div class="products">
+                <div class="product">
+                    <img src="./img/tent2.jpg" alt="Tent">
+                    <p>Camp Aerosped 4 Air Tent</p>
+                    <span class="price">Rs.10000.00</span>
+                    <br>
+                    <button style="margin: 10px; background-color: #ff9900; color: #fff; padding: 8px 16px; border: none; border-radius: 5px; cursor: pointer; font-size: 0.9rem; transition: background-color 0.3s ease;" 
+                    onmouseover="this.style.backgroundColor='#e68a00';" 
+                    onmouseout="this.style.backgroundColor='#ff9900';">Buy Now</button>
+                </div>
+
+                <div class="product">
+                    <img src="./img/bag.jpg" alt="Backpack">
+                    <p>Backpack Aura AG 65 Pack</p>
+                    <span class="price">Rs.5000.00</span>
+                    <br>
+                    <button style=" margin: 10px; background-color: #ff9900; color: #fff; padding: 8px 16px; border: none; border-radius: 5px; cursor: pointer; font-size: 0.9rem; transition: background-color 0.3s ease;" 
+                    onmouseover="this.style.backgroundColor='#e68a00';" 
+                    onmouseout="this.style.backgroundColor='#ff9900';">Buy Now</button>
+                </div>
+
+                <div class="product">
+                    <img src="./img/jacket.jpg" alt="Jacket">
+                    <p>Beta Jacket</p>
+                    <span class="price">Rs.6000.00</span>
+                    <br>
+                    <button style="margin: 10px; background-color: #ff9900; color: #fff; padding: 8px 16px; border: none; border-radius: 5px; cursor: pointer; font-size: 0.9rem; transition: background-color 0.3s ease;" 
+                    onmouseover="this.style.backgroundColor='#e68a00';" 
+                    onmouseout="this.style.backgroundColor='#ff9900';">Buy Now</button>
+                </div>
+
+                <div class="product">
+                    <img src="./img/p4.jpg" alt="Tent">
+                    <p>Magma 30 Sleeping Bag</p>
+                    <span class="price">Rs.13000.00</span>
+                    <br>
+                    <button style="margin: 10px; background-color: #ff9900; color: #fff; padding: 8px 16px; border: none; border-radius: 5px; cursor: pointer; font-size: 0.9rem; transition: background-color 0.3s ease;" 
+                    onmouseover="this.style.backgroundColor='#e68a00';" 
+                    onmouseout="this.style.backgroundColor='#ff9900';">Buy Now</button>
+                </div>
+
+                <div class="product">
+                    <img src="./img/shoe.jpg" alt="Backpack">
+                    <p>Hiking Boots</p>
+                    <span class="price">Rs.25000.00</span>
+                    <br>
+                    <button style="margin: 10px; background-color: #ff9900; color: #fff; padding: 8px 16px; border: none; border-radius: 5px; cursor: pointer; font-size: 0.9rem; transition: background-color 0.3s ease;" 
+                    onmouseover="this.style.backgroundColor='#e68a00';" 
+                    onmouseout="this.style.backgroundColor='#ff9900';">Buy Now</button>
+                </div>
+
+                <div class="product">
+                    <img src="./img/chair.jpg" alt="Jacket">
+                    <p>Low Loveseat</p>
+                    <span class="price">Rs.8000.00</span>
+                    <br>
+                    <button style="margin: 10px; background-color: #ff9900; color: #fff; padding: 8px 16px; border: none; border-radius: 5px; cursor: pointer; font-size: 0.9rem; transition: background-color 0.3s ease;" 
+                    onmouseover="this.style.backgroundColor='#e68a00';" 
+                    onmouseout="this.style.backgroundColor='#ff9900';">Buy Now</button>
+                </div>
+
+                <div class="product">
+                    <img src="./img/pa.jpg" alt="Tent">
+                    <p>Pour Over Set</p>
+                    <span class="price">Rs.10000.00</span>
+                    <br>
+                    <button style="margin: 10px; background-color: #ff9900; color: #fff; padding: 8px 16px; border: none; border-radius: 5px; cursor: pointer; font-size: 0.9rem; transition: background-color 0.3s ease;" 
+                    onmouseover="this.style.backgroundColor='#e68a00';" 
+                    onmouseout="this.style.backgroundColor='#ff9900';">Buy Now</button>
+                </div>
+
+                <div class="product">
+                    <img src="./img/p2.jpg" alt="Backpack">
+                    <p>Flash Java Kit Cooking System</p>
+                    <span class="price">Rs.15000.00</span>
+                    <br>
+                    <button style="margin: 10px; background-color: #ff9900; color: #fff; padding: 8px 16px; border: none; border-radius: 5px; cursor: pointer; font-size: 0.9rem; transition: background-color 0.3s ease;" 
+                    onmouseover="this.style.backgroundColor='#e68a00';" 
+                    onmouseout="this.style.backgroundColor='#ff9900';">Buy Now</button>
+                </div>
+
+                <div class="product">
+                    <img src="./img/p5.jpg" alt="Jacket">
+                    <p>Brew Travel French</p>
+                    <span class="price">Rs.11000.00</span>
+                    <br>
+                    <button style="margin: 10px; background-color: #ff9900; color: #fff; padding: 8px 16px; border: none; border-radius: 5px; cursor: pointer; font-size: 0.9rem; transition: background-color 0.3s ease;" 
+                    onmouseover="this.style.backgroundColor='#e68a00';" 
+                    onmouseout="this.style.backgroundColor='#ff9900';">Buy Now</button>
+                </div>
+
+            </div>
+
+            <button class="load-more">Load More</button>
+        </main>
+    </div>
+
+
+    <!-- Footer Section -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="img/logo.png" alt="Camping Hub Logo">
+            <p>Ella, Badulla, Sri Lanka</p>
+        </div>
+        <div class="footer-links">
+            <h3>Pages</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </div>
+        <div class="footer-info">
+            <h3>Information</h3>
+            <p><i class="ri-phone-line"></i>    078 000 0000</p>
+            <p><i class="ri-mail-line"></i>    pabo97sm@gmail.com</p>
+            <p><i class="ri-map-pin-line"></i>    Ella, Badulla, Sri Lanka</p>
+        </div>
+        <div class="footer-newsletter">
+            <h3>Newsletter</h3>
+            <form>
+                <input type="email" placeholder="Email Address">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <p class="footer-copyright">© 2024 | Paboda. All Rights Reserved.</p>
+</footer>
+
+
+    <!-- Custom JS link -->
+    <script src="script.js"></script>
+
+</body>
+</html>
